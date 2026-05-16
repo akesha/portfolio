@@ -6,7 +6,7 @@ import { profile, tools } from "./portfolioData.js";
 test("portfolio profile has primary identity and links", () => {
   assert.equal(profile.name, "Dr. Akesha Horton");
   assert.equal(profile.stats[0].value, "26");
-  assert.ok(profile.links.length >= 3);
+  assert.ok(profile.links.length >= 1);
 
   for (const link of profile.links) {
     assert.ok(link.label);

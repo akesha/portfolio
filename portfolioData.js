@@ -14,18 +14,8 @@ export const profile = {
   links: [
     {
       label: "Substack",
-      url: "https://spilledandstudied.substack.com",
+      url: "https://akesha.substack.com/",
       text: "Writing on teaching, learning, and academic life.",
-    },
-    {
-      label: "Luddy @ IU",
-      url: "https://luddy.indiana.edu",
-      text: "Academic engagement at the Luddy School of Informatics, Computing, and Engineering.",
-    },
-    {
-      label: "Current portfolio",
-      url: "https://akesha.github.io/portfolio/",
-      text: "The live portfolio that inspired this interactive version.",
     },
   ],
 };
