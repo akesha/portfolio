@@ -1,757 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Akesha Horton | Tools & Projects</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive tools and resources by Dr. Akesha Horton for educators, coaches, researchers, and curious learners."
+    />
+    <title>Dr. Akesha Horton | Interactive Tools Portfolio</title>
+    <link rel="preload" as="image" href="./assets/current/01.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./portfolio.css?v=28" />
+  </head>
+  <body data-theme="studio">
+    <a class="skip-link" href="#work">Skip to tool archive</a>
 
-  :root {
-    --cream: #FAF7F2;
-    --warm-white: #FFFEF9;
-    --charcoal: #1C1C1A;
-    --mid: #5C5B57;
-    --light: #9B9991;
-    --border: #E3DFD7;
-    --coral: #C05A38;
-    --coral-light: #F5EDE8;
-    --coral-mid: #E8A48C;
-    --teal: #2A6B5E;
-    --teal-light: #E4F0ED;
-    --blue: #2C5282;
-    --blue-light: #EBF0F8;
-    --amber: #8A5E0A;
-    --amber-light: #FBF3E2;
-  }
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark" data-profile="initials">AH</span>
+          <span data-profile="name">Dr. Akesha Horton</span>
+        </a>
+        <div class="nav-actions">
+          <a href="#work">Tools</a>
+          <a href="#about">Lens</a>
+          <a href="#connect">Connect</a>
+          <a href="./ai-literacy.html">AI Activity</a>
+          <button
+            class="icon-button"
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch theme"
+            title="Switch theme"
+          >
+            <span aria-hidden="true">◐</span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  body {
-    background: var(--cream);
-    color: var(--charcoal);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
+    <main id="top">
+      <section class="portfolio-hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-profile="eyebrow">Interactive tools & resources</p>
+          <h1 id="intro-title" data-profile="headline">
+            Built with curiosity, designed to teach.
+          </h1>
+          <p class="role-line" data-profile="role">
+            Director of Academic Engagement, IU Luddy School
+          </p>
+          <p class="lede" data-profile="bio">
+            A collection of interactive tools built using AI for educators,
+            coaches, researchers, and anyone who thinks learning should be
+            smarter than a slide deck.
+          </p>
+          <div class="quick-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#work">Explore Tools</a>
+            <a
+              class="button button-secondary"
+              href="https://spilledandstudied.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Substack
+            </a>
+          </div>
+        </div>
 
-  nav {
-    background: var(--warm-white);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
+        <figure class="hero-stage hero-collage" data-tilt>
+          <div class="collage-grid" aria-label="Preview thumbnails from Akesha Horton's interactive tools">
+            <img
+              class="collage-main"
+              src="./assets/current/01.png"
+              alt="CS Faculty Hub preview"
+              width="960"
+              height="640"
+            />
+            <img
+              src="./assets/current/25.png"
+              alt="Student AI Literacy Through Structured Use preview"
+              width="960"
+              height="640"
+            />
+            <img
+              src="./assets/current/22.png"
+              alt="Word Problems preview"
+              width="960"
+              height="640"
+            />
+            <img
+              src="./assets/current/26.jpeg"
+              alt="Algebra Invaders preview"
+              width="960"
+              height="640"
+            />
+            <img
+              src="./assets/current/09.png"
+              alt="Data Storytelling and Visualization Resource Portal preview"
+              width="960"
+              height="640"
+            />
+            <img
+              src="./assets/current/23.png"
+              alt="My Journey Map preview"
+              width="960"
+              height="640"
+            />
+          </div>
+          <figcaption class="stage-note">
+            <span>Current focus</span>
+            <strong data-profile="focus"
+              >AI-built tools for educators, coaches, and curious learners</strong
+            >
+          </figcaption>
+        </figure>
 
-  .nav-brand {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.1rem;
-    color: var(--charcoal);
-    text-decoration: none;
-    letter-spacing: -0.01em;
-  }
+        <dl class="stats" id="profile-stats"></dl>
+      </section>
 
-  .nav-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-  }
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Tool archive</p>
+          <h2 id="work-title">Twenty-six tools, one teaching-centered practice.</h2>
+          <p>
+            Select any tool to preview its details, then open it from the
+            spotlight panel.
+          </p>
+        </div>
 
-  .nav-links a {
-    font-size: 0.875rem;
-    color: var(--mid);
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    transition: color 0.15s;
-  }
+        <div class="archive-controls">
+          <label class="search-field">
+            <span>Search tools</span>
+            <input
+              id="tool-search"
+              type="search"
+              placeholder="Try strengths, Power BI, grants, AI..."
+              autocomplete="off"
+            />
+          </label>
+          <span class="result-count" id="result-count">26 of 26 tools</span>
+        </div>
 
-  .nav-links a:hover { color: var(--coral); }
+        <div class="filter-bar" id="filters" aria-label="Tool filters"></div>
 
-  .hero {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 5rem 2rem 3.5rem;
-  }
+        <div class="portfolio-layout">
+          <div class="project-list" id="tool-list"></div>
 
-  .hero-eyebrow {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--coral);
-    margin-bottom: 1.25rem;
-  }
+          <aside class="spotlight" id="spotlight" aria-live="polite">
+            <div class="spotlight-body">
+              <p class="eyebrow" id="spotlight-category">Faculty Development</p>
+              <h3 id="spotlight-title">CS Faculty Hub</h3>
+              <p id="spotlight-summary"></p>
+              <div class="tag-row" id="spotlight-tags"></div>
+              <dl class="impact-grid" id="spotlight-impact"></dl>
+              <div class="timeline" id="spotlight-steps"></div>
+              <div class="spotlight-actions">
+                <a
+                  class="button button-primary"
+                  id="spotlight-link"
+                  href="https://akesha.github.io/cs-faculty-hub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Tool
+                </a>
+                <button class="button button-secondary" id="copy-tool" type="button">
+                  Copy Link
+                </button>
+              </div>
+            </div>
+            <img
+              class="spotlight-image"
+              id="spotlight-image"
+              src="./assets/current/01.png"
+              alt=""
+              width="960"
+              height="640"
+            />
+          </aside>
+        </div>
+      </section>
 
-  .hero h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    color: var(--charcoal);
-    margin-bottom: 1.25rem;
-  }
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Design lens</p>
+          <h2 id="about-title">What ties the archive together.</h2>
+        </div>
+        <div class="capability-grid" id="capabilities"></div>
+      </section>
 
-  .hero h1 em {
-    font-style: italic;
-    color: var(--coral);
-  }
+      <section class="section playbook-section" aria-labelledby="playbook-title">
+        <div class="playbook-copy">
+          <p class="eyebrow">Practice</p>
+          <h2 id="playbook-title">Three ways to read the work.</h2>
+        </div>
+        <div class="playbook">
+          <div class="playbook-tabs" id="playbook-tabs" role="tablist"></div>
+          <div class="playbook-panel" id="playbook-panel"></div>
+        </div>
+      </section>
 
-  .hero p {
-    font-size: 1.1rem;
-    color: var(--mid);
-    max-width: 580px;
-    line-height: 1.75;
-  }
+      <section class="section contact-section" id="connect" aria-labelledby="connect-title">
+        <div class="section-heading">
+          <p class="eyebrow">Connect</p>
+          <h2 id="connect-title">Follow the thinking behind the tools.</h2>
+          <p>
+            The portfolio is one part archive, one part learning lab. These are
+            the places to keep reading and exploring.
+          </p>
+        </div>
+        <div class="profile-links" id="profile-links"></div>
+      </section>
+    </main>
 
-  .divider {
-    max-width: 900px;
-    margin: 0 auto 3rem;
-    padding: 0 2rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .grid-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 2rem 6rem;
-  }
-
-  .section-label {
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--light);
-    margin-bottom: 1.5rem;
-  }
-
-  .tools-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-
-  @media (max-width: 640px) {
-    .tools-grid { grid-template-columns: 1fr; }
-  }
-
-  .tool-card {
-    background: var(--warm-white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .tool-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.07);
-  }
-
-  .card-visual {
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card-visual-icon {
-    font-size: 2.5rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .card-visual::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0.12;
-  }
-
-  .card-coral .card-visual { background: var(--coral-light); }
-  .card-coral .card-visual-icon { color: var(--coral); }
-  .card-coral .card-tag { background: var(--coral-light); color: var(--coral); }
-  .card-coral .card-link { color: var(--coral); }
-
-  .card-teal .card-visual { background: var(--teal-light); }
-  .card-teal .card-visual-icon { color: var(--teal); }
-  .card-teal .card-tag { background: var(--teal-light); color: var(--teal); }
-  .card-teal .card-link { color: var(--teal); }
-
-  .card-blue .card-visual { background: var(--blue-light); }
-  .card-blue .card-visual-icon { color: var(--blue); }
-  .card-blue .card-tag { background: var(--blue-light); color: var(--blue); }
-  .card-blue .card-link { color: var(--blue); }
-
-  .card-amber .card-visual { background: var(--amber-light); }
-  .card-amber .card-visual-icon { color: var(--amber); }
-  .card-amber .card-tag { background: var(--amber-light); color: var(--amber); }
-  .card-amber .card-link { color: var(--amber); }
-
-  .card-body {
-    padding: 1.25rem 1.5rem 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-tag {
-    display: inline-block;
-    font-size: 0.68rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 50px;
-    margin-bottom: 0.85rem;
-    width: fit-content;
-  }
-
-  .card-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: var(--charcoal);
-    margin-bottom: 0.65rem;
-  }
-
-  .card-desc {
-    font-size: 0.875rem;
-    color: var(--mid);
-    line-height: 1.65;
-    flex: 1;
-    margin-bottom: 1.25rem;
-  }
-
-  .card-link {
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-top: auto;
-  }
-
-  .card-link svg {
-    width: 14px;
-    height: 14px;
-    transition: transform 0.15s;
-  }
-
-  .tool-card:hover .card-link svg {
-    transform: translateX(3px);
-  }
-
-  .icon-wrap {
-    width: 64px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  footer {
-    border-top: 1px solid var(--border);
-    background: var(--warm-white);
-    padding: 2rem;
-    text-align: center;
-  }
-
-  footer p {
-    font-size: 0.8rem;
-    color: var(--light);
-  }
-
-  footer a {
-    color: var(--coral);
-    text-decoration: none;
-  }
-
-  footer a:hover { text-decoration: underline; }
-</style>
-</head>
-<body>
-
-<nav>
-  <a class="nav-brand" href="#">Dr. Akesha Horton</a>
-  <ul class="nav-links">
-    <li><a href="https://spilledandstudied.substack.com" target="_blank">Substack</a></li>
-    <li><a href="https://luddy.indiana.edu" target="_blank">Luddy @ IU</a></li>
-  </ul>
-</nav>
-
-<section class="hero">
-  <p class="hero-eyebrow">Interactive Tools &amp; Resources</p>
-  <h1>Built with curiosity,<br><em>designed to teach.</em></h1>
-  <p>A collection of interactive tools I built using AI &#8212; for educators, coaches, and anyone who thinks learning should be smarter than a slide deck.</p>
-</section>
-
-<div class="divider"></div>
-
-<section class="grid-section">
-  <p class="section-label">Twenty-six tools</p>
-  <div class="tools-grid">
-    <a class="tool-card card-coral" href="https://akesha.github.io/cs-faculty-hub/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/01.png" alt="CS Faculty Hub" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Faculty Development</span>
-        <h2 class="card-title">CS Faculty Hub</h2>
-        <p class="card-desc">Evidence-based teaching strategies curated for computing and STEM educators &#8212; course design, assessment, AI integration, and more.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-teal" href="https://akesha.github.io/luddyteach-retrospective/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/02.png" alt="LuddyTeach Retrospective" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Data & Analytics</span>
-        <h2 class="card-title">LuddyTeach Retrospective</h2>
-        <p class="card-desc">A data-driven interactive retrospective of the LuddyTeach blog &#8212; surfacing patterns, themes, and insights across posts over time.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-blue" href="https://akesha.github.io/LinkedINotPrivate/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/03.png" alt="LinkedINotPrivate" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Privacy & Policy</span>
-        <h2 class="card-title">LinkedINotPrivate</h2>
-        <p class="card-desc">An interactive guide to state data privacy laws &#8212; searchable by state, sector, and regulation type. Know your rights before you post.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-teal" href="https://akesha.github.io/cliftonstrengthsinfo/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/04.png" alt="A Faculty Guide to Strengths-Based Education" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Coaching & Strengths</span>
-        <h2 class="card-title">A Faculty Guide to Strengths-Based Education</h2>
-        <p class="card-desc">An interactive guide to the 34 CliftonStrengths themes &#8212; designed to support coaches and learners preparing for certification.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-teal" href="https://pages.github.iu.edu/akmhorto/cliftonstrengths-hub/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/05.png" alt="CliftonStrengths Learning Hub" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Coaching & Strengths</span>
-        <h2 class="card-title">CliftonStrengths Learning Hub</h2>
-        <p class="card-desc">A comprehensive hub for CliftonStrengths resources at IU Luddy &#8212; theme profiles, coaching frameworks, and team strengths tools.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-amber" href="https://akesha.github.io/visibleLearning/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/06.png" alt="Fink's & Bloom's Taxonomy" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Curriculum Design</span>
-        <h2 class="card-title">Fink&#8217;s &amp; Bloom&#8217;s Taxonomy</h2>
-        <p class="card-desc">Side-by-side comparisons of two foundational learning taxonomies &#8212; helping educators align course objectives with meaningful learning outcomes.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-blue" href="https://akesha.github.io/visibleLearning/thinking-fink-visual.html" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/07.png" alt="Making Thinking Visible: Ritchhart + Fink for STEM" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Curriculum Design</span>
-        <h2 class="card-title">Making Thinking Visible: Ritchhart + Fink for STEM</h2>
-        <p class="card-desc">An interactive visual combining Ron Ritchhart&#8217;s Making Thinking Visible framework with Fink&#8217;s Taxonomy &#8212; designed for STEM faculty.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-coral" href="https://pages.github.iu.edu/akmhorto/computing-verb-atlas/beyond-blooms-finks-taxonomy.html" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/08.png" alt="Beyond Bloom's: Fink's Taxonomy for Computing" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Curriculum Design</span>
-        <h2 class="card-title">Beyond Bloom&#8217;s: Fink&#8217;s Taxonomy for Computing</h2>
-        <p class="card-desc">A deep-dive companion piece exploring what Fink&#8217;s Taxonomy of Significant Learning means specifically for computing courses and CS educators.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-blue" href="https://akesha.github.io/data-storytelling-resources/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/09.png" alt="Data Storytelling & Visualization Resource Portal" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Data & Visualization</span>
-        <h2 class="card-title">Data Storytelling &amp; Visualization Resource Portal</h2>
-        <p class="card-desc">A curated portal of resources for teaching and learning data storytelling &#8212; tools, readings, activities, and frameworks for educators and researchers.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-blue" href="https://akesha.github.io/PowerBI/powerbi-qualitative-guide.html" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/10.png" alt="Power BI Qualitative Data Visualization Guide" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Data & Visualization</span>
-        <h2 class="card-title">Power BI Qualitative Data Visualization Guide</h2>
-        <p class="card-desc">An interactive guide for visualizing qualitative research data in Power BI, helping educators and researchers move beyond spreadsheets into visual analysis.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-amber" href="https://huggingface.co/spaces/drakesha/nsf-logic-model-builder" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/11.png" alt="NSF Logic Model Builder" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Research & Funding</span>
-        <h2 class="card-title">NSF Logic Model Builder</h2>
-        <p class="card-desc">An AI-powered tool for building NSF grant logic models &#8212; helping researchers map inputs, activities, outputs, and outcomes into a structured, funder-ready framework.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-coral" href="https://www.playlab.ai/project/cmhtkrsv4ba9rml0ufwxhysbg" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/12.png" alt="AI Teaching Resources for Faculty in Technical Fields" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">AI & EdTech</span>
-        <h2 class="card-title">AI Teaching Resources for Faculty in Technical Fields</h2>
-        <p class="card-desc">A curated AI-powered tool helping faculty in CS, engineering, informatics, and library science discover AI tools relevant to their teaching and learning practice.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-teal" href="https://akesha.github.io/strengths-prompts/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/13.png" alt="Strengths Coaching Prompt Lab" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Coaching & Strengths</span>
-        <h2 class="card-title">Strengths Coaching Prompt Lab</h2>
-        <p class="card-desc">An interactive prompt generator for CliftonStrengths coaching conversations &#8212; helping coaches craft targeted, theme-specific questions and reflections.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-amber" href="https://akesha.github.io/beyondBlooms/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/15.png" alt="Taxonomy Verb Finder: Bloom's + Fink's" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Curriculum Design</span>
-        <h2 class="card-title">Taxonomy Verb Finder: Bloom&#8217;s + Fink&#8217;s</h2>
-        <p class="card-desc">Search and match action verbs to Bloom&#8217;s and Fink&#8217;s taxonomy levels for writing stronger, more aligned learning objectives.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-coral" href="https://ai-build-lab-1.onrender.com/login" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/16.png" alt="Faculty Onboarding System" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Faculty Development</span>
-        <h2 class="card-title">Faculty Onboarding System</h2>
-        <p class="card-desc">Quick pre-interview with faculty to discover their onboarding needs related to teaching and learning before meeting with faculty developer.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-amber" href="https://akesha.github.io/photoalbum/grant-finder.html" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/14.png" alt="Grant Finder & Tracker" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Research & Funding</span>
-        <h2 class="card-title">Grant Finder &amp; Tracker</h2>
-        <p class="card-desc">Find, filter, and track grant opportunities across education, HCI, arts, makerspaces, and more &#8212; all in one searchable dashboard.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-coral" href="https://akesha.github.io/edugame/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/17.png" alt="Syllabus Quest" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Faculty Development</span>
-        <h2 class="card-title">Syllabus Quest</h2>
-        <p class="card-desc">An interactive video game to help students understand syllabus policies and university resources for an undergraduate research course.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-amber" href="https://akesha.github.io/dinner-picker/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/18.png" alt="Meal Planner" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Lifestyle & Productivity</span>
-        <h2 class="card-title">Meal Planner</h2>
-        <p class="card-desc">An interactive tool to help people with a busy or lazy lifestyle plan healthy, balanced meals throughout the week.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-    <a class="tool-card card-teal" href="https://akesha.github.io/completestory/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/19.png" alt="Digital Storytelling for Faculty" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Faculty Development</span>
-        <h2 class="card-title">Digital Storytelling for Faculty</h2>
-        <p class="card-desc">An interactive page to help faculty teach students how to create digital stories using media, narration, and visual storytelling tools.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-    <!-- Instructional Reflection Tool -->
-    <a class="tool-card card-coral" href="https://instructional-reflection.vercel.app/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/20.jpeg" alt="Instructional Reflection Tool" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Faculty Development</span>
-        <h2 class="card-title">Instructional Reflection Tool</h2>
-        <p class="card-desc">A structured end-of-term protocol for capturing what you actually learned from teaching &#8212; five prompts, specific incidents, multiple lenses, anchored to evidence. Closes the loop so your observations become a teaching dossier or SoTL project, not just a mood.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-
-    <!-- GitHub Playground -->
-    <a class="tool-card card-teal" href="https://akesha.github.io/git-playground/playground/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/21.png" alt="GitHub Playground" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Faculty Development</span>
-        <h2 class="card-title">GitHub Playground</h2>
-        <p class="card-desc">An interactive playground for learning Git and GitHub concepts hands-on &#8212; designed for students and faculty who want to build version control confidence without fear of breaking anything.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-
-    <!-- Word Problems -->
-    <a class="tool-card card-amber" href="https://akesha.github.io/wordproblems/sources/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/22.png" alt="Word Problems Workbook" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">EdTech & Math</span>
-        <h2 class="card-title">Word Problems</h2>
-        <p class="card-desc">A web-based workbook that helps high school and college students slow down and actually interpret a math word problem &#8212; instead of pattern-matching their way to an answer.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-
-    <!-- My Journey Map -->
-    <a class="tool-card card-blue" href="https://akesha.github.io/journeymap/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/23.png" alt="My Journey Map" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Personal & Narrative</span>
-        <h2 class="card-title">My Journey Map</h2>
-        <p class="card-desc">A single-file interactive scrollytelling map of twelve chapters across work, learning, and personal life. Each chapter brings its own color palette and ambient tone. The narrative reveals itself one scene at a time. Click any pin for the longer story.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-
-    <!-- Student AI Literacy Sandbox -->
-    <a class="tool-card card-teal" href="https://akesha.github.io/homework/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/24.png" alt="Student AI Literacy Sandbox" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">AI & EdTech</span>
-        <h2 class="card-title">Student AI Literacy Sandbox</h2>
-        <p class="card-desc">Featured design studio at IU&#8217;s Connected Classroom Summit 2026 &#8212; a 50-minute faculty workshop teaching students to argue with AI before they trust it.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-
-    <!-- Student AI Literacy Through Structured Use -->
-    <a class="tool-card card-blue" href="https://akesha.github.io/dail/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/25.png" alt="Student AI Literacy Through Structured Use" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">AI & EdTech</span>
-        <h2 class="card-title">Student AI Literacy Through Structured Use</h2>
-        <p class="card-desc">A browser-based activity that walks learners through auditing their own AI use &#8212; answer first, build a deliberate prompt, critique the response against a judgment rubric, and revise. Leave with an exportable AI Use Note recording what the tool added, what it missed, and what you chose to keep.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-
-    <!-- Algebra Invaders -->
-    <a class="tool-card card-blue" href="https://akesha.github.io/mathgame/" target="_blank">
-      <div class="card-visual">
-        <img src="https://raw.githubusercontent.com/akesha/portfolio/main/images/26.png" alt="Algebra Invaders" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">EdTech & Math</span>
-        <h2 class="card-title">Algebra Invaders</h2>
-        <p class="card-desc">A retro arcade-styled web game that turns math fact practice into a Space Invaders&#8211;inspired experience. Defend against descending equations by solving them before they reach the bottom &#8212; with difficulty and operation types configurable per player profile.</p>
-        <span class="card-link">
-          Open tool
-          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 7h12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-      </div>
-    </a>
-
-  </div>
-</section>
-
-<footer>
-  <p>Built by <a href="https://spilledandstudied.substack.com" target="_blank">Dr. Akesha Horton</a> &middot; Director of Academic Engagement, IU Luddy School &middot; Made with Claude</p>
-</footer>
-
-</body>
+    <script type="module" src="./portfolio.js?v=28"></script>
+  </body>
 </html>

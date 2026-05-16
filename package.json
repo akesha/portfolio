@@ -1,0 +1,9 @@
+{
+  "name": "akesha-interactive-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4174",
+    "test": "node --test"
+  }
+}

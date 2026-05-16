@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A student-facing AI literacy activity by Akesha Horton where learners critique, compare, and reflect before revising their own work."
+    />
+    <title>Student AI Literacy Through Structured Use | Akesha Horton</title>
+    <link rel="preload" as="image" href="./assets/portfolio-hero.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-theme="clarity">
+    <a class="skip-link" href="#studio">Skip to activity studio</a>
+
+    <header class="site-header">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark">AH</span>
+          <span>Akesha Horton</span>
+        </a>
+        <div class="nav-actions">
+          <a href="./index.html">Portfolio</a>
+          <a href="#studio">Activity</a>
+          <a href="#export">AI Use Note</a>
+          <button class="nav-button" id="theme-toggle" type="button">Theme</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Student AI literacy through structured use</p>
+          <h1 id="page-title">Build judgment, not dependency.</h1>
+          <p class="lede">
+            Learners begin with their own thinking, interrogate AI output, compare
+            alternatives, and leave with a clearer final judgment.
+          </p>
+          <div class="quick-actions" aria-label="Activity actions">
+            <a class="button button-primary" href="#studio">Start Activity</a>
+            <a class="button button-secondary" href="#export">View Reflection</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual" aria-label="Activity visual">
+          <img
+            src="./assets/portfolio-hero.png"
+            alt="A visual workbench with interface panels, colored notes, and comparison charts."
+            width="960"
+            height="640"
+          />
+          <figcaption>
+            <span>Activity arc</span>
+            <strong>Critique. Compare. Reflect. Revise.</strong>
+          </figcaption>
+        </figure>
+
+        <aside class="progress-panel" aria-labelledby="progress-title">
+          <div>
+            <p class="eyebrow">Live progress</p>
+            <h2 id="progress-title">Your audit trail</h2>
+          </div>
+          <div
+            class="progress-meter"
+            role="progressbar"
+            aria-label="Activity completion"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <span id="progress-value">0%</span>
+            <i id="progress-fill" aria-hidden="true"></i>
+          </div>
+          <ol class="progress-list" id="progress-list"></ol>
+        </aside>
+      </section>
+
+      <section class="studio-shell" id="studio" aria-labelledby="studio-title">
+        <div class="studio-heading">
+          <p class="eyebrow">Activity studio</p>
+          <h2 id="studio-title">A structured AI response audit</h2>
+          <p>
+            Use the panels in order. The goal is not to make AI disappear; the
+            goal is to make your judgment visible.
+          </p>
+        </div>
+
+        <div class="studio-layout">
+          <aside class="phase-rail" aria-label="Activity phases">
+            <div id="phase-rail"></div>
+          </aside>
+
+          <div class="activity-flow">
+            <section class="studio-section" id="question" data-phase="question">
+              <div class="section-kicker">Set the task</div>
+              <div class="section-body">
+                <div>
+                  <h3>Choose or write a question</h3>
+                  <p>
+                    Pick a class-ready question, then adjust it until it sounds
+                    like something you would genuinely answer.
+                  </p>
+                </div>
+                <div class="question-bank" id="question-bank"></div>
+                <label class="field-block">
+                  <span>Question</span>
+                  <textarea
+                    id="class-question"
+                    rows="4"
+                    placeholder="Paste or write the question students will investigate."
+                  ></textarea>
+                </label>
+                <label class="field-block">
+                  <span>Class source, text, or context</span>
+                  <input
+                    id="class-context"
+                    type="text"
+                    placeholder="Example: Chapter 3 reading, lab data, local case study"
+                  />
+                </label>
+              </div>
+            </section>
+
+            <section class="studio-section" id="think" data-phase="think">
+              <div class="section-kicker">1. Think first</div>
+              <div class="section-body two-column">
+                <div>
+                  <h3>Start with your own answer</h3>
+                  <p>
+                    Capture your first claim, your support, and the place where
+                    your confidence thins out.
+                  </p>
+                </div>
+                <div class="field-stack">
+                  <label class="field-block">
+                    <span>Main answer or claim</span>
+                    <textarea
+                      id="own-answer"
+                      rows="5"
+                      placeholder="I think..."
+                    ></textarea>
+                  </label>
+                  <label class="field-block">
+                    <span>Reasons, evidence, or examples</span>
+                    <textarea
+                      id="own-evidence"
+                      rows="4"
+                      placeholder="Because..."
+                    ></textarea>
+                  </label>
+                  <label class="field-block">
+                    <span>One uncertainty</span>
+                    <input
+                      id="own-uncertainty"
+                      type="text"
+                      placeholder="I am not sure about..."
+                    />
+                  </label>
+                </div>
+              </div>
+            </section>
+
+            <section class="studio-section" id="prompt" data-phase="prompt">
+              <div class="section-kicker">2. Prompt deliberately</div>
+              <div class="section-body">
+                <div>
+                  <h3>Build the AI request</h3>
+                  <p>
+                    The prompt asks AI to support your thinking process, not to
+                    replace it.
+                  </p>
+                </div>
+                <div class="mode-picker" id="prompt-modes" role="tablist"></div>
+                <div class="prompt-preview">
+                  <pre id="prompt-preview"></pre>
+                  <button class="button button-secondary" id="copy-prompt" type="button">
+                    Copy Prompt
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section class="studio-section" id="critique" data-phase="critique">
+              <div class="section-kicker">3. Critique the output</div>
+              <div class="section-body">
+                <div class="critique-heading">
+                  <div>
+                    <h3>Paste, label, and question the AI response</h3>
+                    <p>
+                      Use the labels to name what the response does well, where
+                      it weakens, and what still needs checking.
+                    </p>
+                  </div>
+                  <div class="sample-actions">
+                    <button class="button button-secondary" id="load-sample-a" type="button">
+                      Load Sample A
+                    </button>
+                    <button class="button button-secondary" id="load-sample-b" type="button">
+                      Load Sample B
+                    </button>
+                  </div>
+                </div>
+
+                <div class="response-grid">
+                  <label class="field-block">
+                    <span>AI response A</span>
+                    <textarea
+                      id="response-a"
+                      rows="9"
+                      placeholder="Paste the first AI response here."
+                    ></textarea>
+                  </label>
+                  <label class="field-block">
+                    <span>AI response B</span>
+                    <textarea
+                      id="response-b"
+                      rows="9"
+                      placeholder="Paste a second response, skeptical version, or alternative viewpoint."
+                    ></textarea>
+                  </label>
+                </div>
+
+                <div class="label-grid" id="critique-labels"></div>
+
+                <label class="field-block">
+                  <span>Critique notes</span>
+                  <textarea
+                    id="critique-notes"
+                    rows="6"
+                    placeholder="What is accurate, questionable, missing, stronger than yours, or weaker than yours?"
+                  ></textarea>
+                </label>
+              </div>
+            </section>
+
+            <section class="studio-section" id="compare" data-phase="compare">
+              <div class="section-kicker">4. Compare responses</div>
+              <div class="section-body">
+                <div class="compare-intro">
+                  <div>
+                    <h3>Score the usefulness of what AI produced</h3>
+                    <p>
+                      Ratings are not about liking the answer. They are about
+                      deciding what deserves trust, revision, or rejection.
+                    </p>
+                  </div>
+                  <div class="scoreboard">
+                    <span id="score-value">3.0</span>
+                    <strong id="score-label">Developing judgment</strong>
+                  </div>
+                </div>
+                <div class="rubric-grid" id="rubric-grid"></div>
+              </div>
+            </section>
+
+            <section class="studio-section" id="reflect" data-phase="reflect">
+              <div class="section-kicker">5. Reflect and revise</div>
+              <div class="section-body two-column">
+                <div>
+                  <h3>Write the improved answer</h3>
+                  <p>
+                    Keep at least one idea from your original response, then
+                    explain what you accepted, changed, or rejected from AI.
+                  </p>
+                  <div class="starter-list" id="starter-list"></div>
+                </div>
+                <div class="field-stack">
+                  <label class="field-block">
+                    <span>Final answer</span>
+                    <textarea
+                      id="final-answer"
+                      rows="8"
+                      placeholder="My revised answer is..."
+                    ></textarea>
+                  </label>
+                  <label class="field-block">
+                    <span>I accepted</span>
+                    <input id="accepted" type="text" placeholder="One useful idea, phrase, or structure" />
+                  </label>
+                  <label class="field-block">
+                    <span>I rejected or changed</span>
+                    <input id="changed" type="text" placeholder="One weak, vague, or unsupported part" />
+                  </label>
+                  <label class="field-block">
+                    <span>My final judgment</span>
+                    <input id="judgment" type="text" placeholder="What I now believe and why" />
+                  </label>
+                </div>
+              </div>
+            </section>
+
+            <section class="studio-section export-section" id="export" data-phase="export">
+              <div class="section-kicker">Ready to submit</div>
+              <div class="section-body">
+                <div class="export-heading">
+                  <div>
+                    <h3>AI Use Note</h3>
+                    <p>
+                      This summary makes the learner's process visible for a
+                      teacher, peer reviewer, or future self.
+                    </p>
+                  </div>
+                  <div class="export-actions">
+                    <button class="button button-secondary" id="reset-work" type="button">
+                      Reset
+                    </button>
+                    <button class="button button-primary" id="copy-export" type="button">
+                      Copy Note
+                    </button>
+                  </div>
+                </div>
+                <pre class="export-preview" id="export-preview"></pre>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./ai-literacy.js"></script>
+  </body>
+</html>
