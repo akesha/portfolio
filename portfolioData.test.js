@@ -5,8 +5,8 @@ import { profile, tools } from "./portfolioData.js";
 
 test("portfolio profile has primary identity and links", () => {
   assert.equal(profile.name, "Dr. Akesha Horton");
-  assert.equal(profile.stats[0].value, "26");
-  assert.ok(profile.links.length >= 1);
+  assert.equal(profile.stats[0].value, "27");
+  assert.ok(profile.links.length >= 3);
 
   for (const link of profile.links) {
     assert.ok(link.label);
@@ -15,8 +15,8 @@ test("portfolio profile has primary identity and links", () => {
   }
 });
 
-test("tool archive has 26 complete tools with local thumbnails", async () => {
-  assert.equal(tools.length, 26);
+test("tool archive has 27 complete tools with local thumbnails", async () => {
+  assert.equal(tools.length, 27);
   assert.equal(new Set(tools.map((tool) => tool.id)).size, tools.length);
 
   for (const tool of tools) {

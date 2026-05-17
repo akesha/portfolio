@@ -1,19 +1,21 @@
-# Dr. Akesha Horton Interactive Portfolio
+# Student AI Literacy Through Structured Use
 
-A GitHub Pages-ready static portfolio for Dr. Akesha Horton.
+An interactive student-facing AI literacy activity by Akesha Horton.
 
-## What Publishes
+Learners move through a structured response audit:
 
-- `index.html` is the interactive portfolio homepage.
-- `ai-literacy.html` preserves the Student AI Literacy activity.
-- `assets/current/` contains the 26 local portfolio thumbnails.
+- Start with their own answer before using AI
+- Build a deliberate prompt
+- Paste and critique AI responses
+- Compare usefulness with a judgment rubric
+- Revise and export an AI Use Note
 
 ## Local Preview
 
-From this folder, run:
+This is a static site. From the project folder, run:
 
 ```bash
-npm run start
+python3 -m http.server 4174
 ```
 
 Then open:
@@ -22,23 +24,34 @@ Then open:
 http://127.0.0.1:4174/
 ```
 
-## Publish On GitHub Pages
+## GitHub Pages
 
 1. Create a new GitHub repository.
-2. Upload everything in this folder to the repository root.
+2. Add the project files to the repository root.
 3. Commit and push to the `main` branch.
 4. In GitHub, open `Settings` -> `Pages`.
 5. Set `Source` to `Deploy from a branch`.
 6. Set `Branch` to `main` and folder to `/root`.
 7. Save.
 
-Your site will publish at:
+The site uses relative paths, so it will work from a repository Pages URL such as:
 
 ```text
 https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
 ```
 
-## Test
+## Files Needed For The Site
+
+- `index.html`
+- `styles.css`
+- `ai-literacy.js`
+- `activityData.js`
+- `assets/portfolio-hero.png`
+- `.nojekyll`
+
+## Testing
+
+Run:
 
 ```bash
 npm test

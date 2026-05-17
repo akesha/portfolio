@@ -1,4 +1,4 @@
-export const profile = {
+const profile = {
   name: "Dr. Akesha Horton",
   initials: "AH",
   eyebrow: "Interactive tools & resources",
@@ -30,7 +30,7 @@ export const profile = {
   ],
 };
 
-export const tools = [
+const tools = [
   {
     id: "cs-faculty-hub",
     title: "CS Faculty Hub",
@@ -357,7 +357,7 @@ export const tools = [
   },
 ];
 
-export const capabilities = [
+const capabilities = [
   {
     title: "Tools That Teach",
     text: "The archive turns complex educational ideas into objects people can touch: hubs, dashboards, prompt labs, games, and guided workflows.",
@@ -372,7 +372,7 @@ export const capabilities = [
   },
 ];
 
-export const playbook = [
+const playbook = [
   {
     id: "teach",
     label: "Teach",
@@ -407,3 +407,10 @@ export const playbook = [
     ],
   },
 ];
+
+window.portfolioData = {
+  capabilities,
+  playbook,
+  profile,
+  tools,
+};

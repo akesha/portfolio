@@ -1,4 +1,5 @@
-import { capabilities, playbook, profile, tools } from "./portfolioData.js?v=36";
+(function () {
+const { capabilities, playbook, profile, tools } = window.portfolioData;
 
 const state = {
   filter: "All",
@@ -402,3 +403,4 @@ renderCapabilities();
 renderPlaybook();
 applyTheme(state.theme);
 bindEvents();
+})();
