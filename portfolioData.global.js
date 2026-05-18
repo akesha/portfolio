@@ -7,7 +7,7 @@ const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "27" },
+    { label: "Tools", value: "28" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -354,6 +354,18 @@ const tools = [
     tags: ["Civic reasoning", "Constitutional law", "AI scaffold"],
     audience: "High school and college students",
     format: "Quest-based web app",
+  },
+  {
+    id: "blog-to-video-workshop",
+    title: "From Blog Post to Animated Video · A Workshop Guide",
+    category: "AI & EdTech",
+    url: "https://akesha.github.io/aiquickvideo/",
+    image: "./assets/current/28.png",
+    summary:
+      "A single-page workshop guide that walks writers and artists through turning a blog post into a 30-second animated video with Runway, ElevenLabs, CapCut, and optionally Invideo AI. Eight sequential scenes framed by pre-scene principles, watch-outs, and a resources toolkit.",
+    tags: ["AI video", "Workshop", "Content creation"],
+    audience: "Writers and artists",
+    format: "Workshop guide",
   },
 ];
 
