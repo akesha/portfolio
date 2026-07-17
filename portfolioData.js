@@ -7,7 +7,7 @@ export const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "30" },
+    { label: "Tools", value: "31" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -390,6 +390,18 @@ export const tools = [
     tags: ["Contemplative", "Journaling", "Ritual design"],
     audience: "Adults sitting with a question",
     format: "Interactive reading",
+  },
+  {
+    id: "role-play-practice",
+    title: "Role Play Practice · Intelligent Systems Engineering",
+    category: "AI & EdTech",
+    url: "https://akesha.github.io/scenario/",
+    image: "./assets/current/31.png",
+    summary:
+      "An AI-powered role play tool for ISE students to rehearse the workplace conversations engineers actually have. Users describe a scenario or pick from a bank of ~32 ready-made role plays across eight categories: stakeholder communication, requirements elicitation, defending design decisions, failure modes, technical interviews, professionalism, negotiation, and teammate disagreements. Sandboxed — conversations aren't saved.",
+    tags: ["Soft skills", "AI role play", "Career readiness"],
+    audience: "ISE students",
+    format: "AI practice tool",
   },
 ];
 
