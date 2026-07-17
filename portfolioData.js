@@ -7,7 +7,7 @@ export const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "28" },
+    { label: "Tools", value: "29" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -366,6 +366,18 @@ export const tools = [
     tags: ["AI video", "Workshop", "Content creation"],
     audience: "Writers and artists",
     format: "Workshop guide",
+  },
+  {
+    id: "teaching-at-luddy",
+    title: "Teaching at Luddy",
+    category: "Faculty Development",
+    url: "https://akesha.github.io/facultyresource/",
+    image: "./assets/current/29.png",
+    summary:
+      "A field guide for Luddy faculty, built around student-centered design, a shared teaching vocabulary, and one-on-one support. A searchable Q&A catalog covers inherited syllabi, first-semester checklists, redesign strategy, AI policy, and school-specific acronyms — designed so faculty can find the one answer they need without reading the whole thing.",
+    tags: ["Faculty resource", "Course design", "IU Luddy"],
+    audience: "Luddy faculty",
+    format: "Field guide",
   },
 ];
 
