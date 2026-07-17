@@ -7,7 +7,7 @@ export const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "29" },
+    { label: "Tools", value: "30" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -378,6 +378,18 @@ export const tools = [
     tags: ["Faculty resource", "Course design", "IU Luddy"],
     audience: "Luddy faculty",
     format: "Field guide",
+  },
+  {
+    id: "veiled-tarot",
+    title: "Veiled · A Tarot Practice",
+    category: "Reflective Practice",
+    url: "https://veiled-tarot.pages.dev/",
+    image: "./assets/current/30.png",
+    summary:
+      "An interactive tarot reading site framed as a contemplative practice rather than fortune-telling. Users bring a question, shuffle and cut a 78-card deck, and receive a personal reading built around the cards' historical meanings. A three-step ritual — bring the question, shuffle & cut, read & reflect — designed as journaling scaffolding, not prophecy.",
+    tags: ["Contemplative", "Journaling", "Ritual design"],
+    audience: "Adults sitting with a question",
+    format: "Interactive reading",
   },
 ];
 
