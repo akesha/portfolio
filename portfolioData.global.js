@@ -7,7 +7,7 @@ const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "31" },
+    { label: "Tools", value: "32" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -402,6 +402,18 @@ const tools = [
     tags: ["Soft skills", "AI role play", "Career readiness"],
     audience: "ISE students",
     format: "AI practice tool",
+  },
+  {
+    id: "git-playground",
+    title: "Git Playground",
+    category: "Faculty Development",
+    url: "https://akesha.github.io/git-playground/",
+    image: "./assets/current/32.png",
+    summary:
+      "An in-browser simulator that makes Git's invisible state model visible. Type real Git commands and watch files travel between the working directory, staging area, local commits, and remote — a hands-on way to build the mental model behind add, commit, and push.",
+    tags: ["Git", "Simulator", "Version control"],
+    audience: "Students and faculty",
+    format: "Interactive simulator",
   },
 ];
 
