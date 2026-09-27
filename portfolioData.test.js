@@ -5,7 +5,7 @@ import { profile, tools } from "./portfolioData.js";
 
 test("portfolio profile has primary identity and links", () => {
   assert.equal(profile.name, "Dr. Akesha Horton");
-  assert.equal(profile.stats[0].value, "32");
+  assert.equal(profile.stats[0].value, "38");
   assert.ok(profile.links.length >= 3);
 
   for (const link of profile.links) {
@@ -15,8 +15,8 @@ test("portfolio profile has primary identity and links", () => {
   }
 });
 
-test("tool archive has 32 complete tools with local thumbnails", async () => {
-  assert.equal(tools.length, 32);
+test("tool archive has 38 complete tools with local thumbnails", async () => {
+  assert.equal(tools.length, 38);
   assert.equal(new Set(tools.map((tool) => tool.id)).size, tools.length);
 
   for (const tool of tools) {
@@ -30,4 +30,22 @@ test("tool archive has 32 complete tools with local thumbnails", async () => {
     assert.match(tool.image, /^\.\/assets\/current\/.+\.(png|jpeg)$/);
     await stat(new URL(tool.image, import.meta.url));
   }
+
+  assert.equal(new Set(tools.map((tool) => tool.url)).size, tools.length);
+});
+
+test("featured tools lead the archive in order", () => {
+  const featured = [
+    "https://akesha.github.io/graphicNovel/",
+    "https://akesha.github.io/luddyindy/",
+    "https://akesha.github.io/visionBoard/",
+    "https://akesha.github.io/wheelofLife/",
+    "https://akesha.github.io/aichar/",
+    "https://course-coach-2ms.pages.dev/coach",
+  ];
+
+  assert.deepEqual(
+    tools.slice(0, featured.length).map((tool) => tool.url),
+    featured,
+  );
 });

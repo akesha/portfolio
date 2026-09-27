@@ -7,7 +7,7 @@ const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "32" },
+    { label: "Tools", value: "38" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -31,6 +31,78 @@ const profile = {
 };
 
 const tools = [
+  {
+    id: "panel-pipeline",
+    title: "Panel Pipeline",
+    category: "AI & EdTech",
+    url: "https://akesha.github.io/graphicNovel/",
+    image: "./assets/current/33.png",
+    summary:
+      "A graphic novel studio that turns a story into comic script panels in three steps, then hands the result to Google NotebookLM as a slide deck. The engine partitions every line of dialogue and action into panels without dropping a scene, and ships with a script linter, storyboard, prompt library, and an instructor view.",
+    tags: ["Graphic novel", "NotebookLM", "Story to script"],
+    audience: "Faculty and students",
+    format: "Creative studio",
+  },
+  {
+    id: "luddy-major-explorer",
+    title: "Find Your Major · Luddy Indianapolis",
+    category: "Advising & Student Success",
+    url: "https://akesha.github.io/luddyindy/",
+    image: "./assets/current/34.png",
+    summary:
+      "A guided explorer of Luddy Indianapolis's eight undergraduate majors built on real curriculum and career data, with an AI assistant named Scout. Students can take a swipe quiz, browse, compare majors side by side, or start from a career and work backward.",
+    tags: ["Advising", "Major exploration", "AI assistant"],
+    audience: "Students",
+    format: "Guided explorer",
+  },
+  {
+    id: "vision-board",
+    title: "Plant a Vision",
+    category: "Coaching & Strengths",
+    url: "https://akesha.github.io/visionBoard/",
+    image: "./assets/current/35.png",
+    summary:
+      "Pick a corner of your life — career, health, relationships, money, creativity, travel, learning, spirituality, or community — get a little guidance, and build a vision board from it. Boards save on the device, so nothing is sent anywhere.",
+    tags: ["Vision board", "Goal setting", "Reflection"],
+    audience: "Adults sitting with a question",
+    format: "Guided activity",
+  },
+  {
+    id: "wheel-of-life",
+    title: "Wheel of Life",
+    category: "Coaching & Strengths",
+    url: "https://akesha.github.io/wheelofLife/",
+    image: "./assets/current/36.png",
+    summary:
+      "The coaching standby, made editable. Score satisfaction from one at the center to ten at the rim across eight life areas and the new perimeter becomes the wheel — if it were real, how bumpy would the ride be? Rename every area to a client's own focus, apply a preset for Co-Active, career change, solo business, or grad school, note why each score is what it is, and export a PNG.",
+    tags: ["Coaching", "Self-assessment", "Client tool"],
+    audience: "Coaches",
+    format: "Assessment tool",
+  },
+  {
+    id: "animated-character-guide",
+    title: "Character-to-Video Field Guide",
+    category: "AI & EdTech",
+    url: "https://akesha.github.io/aichar/",
+    image: "./assets/current/37.png",
+    summary:
+      "Making an animated character is five separate jobs — design, animate, voice, polish, and edit — and no single tool does all of them well. Say what your character needs to do and the guide assembles a workflow from the tools that fit, with current pricing and what each one is actually best at.",
+    tags: ["Animation", "AI video", "Tool selection"],
+    audience: "Faculty and students",
+    format: "Workflow builder",
+  },
+  {
+    id: "luddy-course-coach",
+    title: "Luddy Course Coach",
+    category: "AI & EdTech",
+    url: "https://course-coach-2ms.pages.dev/coach",
+    image: "./assets/current/38.png",
+    summary:
+      "An AI consultant that audits one course with you. It sorts every graded element into Bedrock work students must own unassisted and Signature work where AI is a collaborator, rates each for AI-substitution risk, stress-tests your big projects, and ends with a Strategic Audit Report carrying paste-ready assignment language.",
+    tags: ["Course audit", "AI policy", "Assessment"],
+    audience: "Luddy faculty",
+    format: "AI course audit",
+  },
   {
     id: "cs-faculty-hub",
     title: "CS Faculty Hub",
