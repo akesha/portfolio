@@ -7,7 +7,7 @@ const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "38" },
+    { label: "Tools", value: "41" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -102,6 +102,42 @@ const tools = [
     tags: ["Course audit", "AI policy", "Assessment"],
     audience: "Luddy faculty",
     format: "AI course audit",
+  },
+  {
+    id: "intelligent-folder-tutorial",
+    title: "Build Your Intelligent Folder",
+    category: "AI & EdTech",
+    url: "https://akesha.github.io/intelligentFolder/tutorial/",
+    image: "./assets/current/39.png",
+    summary:
+      "A workshop tutorial for making an AI tool remember your project. You build AGENTS.md in the folder where the work actually lives — mission, current direction, open questions, next step, and how the AI should behave — alongside a notes/ folder of short dated entries for how you got here. Recommended path uses Codex, with a browser-based alternative for anyone without access, plus a 75-second silent walkthrough.",
+    tags: ["AGENTS.md", "AI context", "Workshop"],
+    audience: "Workshop participants",
+    format: "Workshop tutorial",
+  },
+  {
+    id: "ai-study-stack",
+    title: "The AI Study Stack",
+    category: "AI & EdTech",
+    url: "https://akesha.github.io/geminitutor/",
+    image: "./assets/current/41.png",
+    summary:
+      "A hands-on guide to turning Gemini Notebook, Gemini, and ChatGPT into a study partner for a real course. One idea — hand the AI your own course material and make it answer only from that, with citations — then five layers that each do one job, so you can take only the ones you need. Includes the overlooked features, a quiz, and an honest section on the limits.",
+    tags: ["Study skills", "Citations", "Gemini Notebook"],
+    audience: "Students",
+    format: "Study guide",
+  },
+  {
+    id: "outnumbered",
+    title: "Outnumbered",
+    category: "EdTech & Math",
+    url: "https://akesha.github.io/outNumbered/",
+    image: "./assets/current/40.png",
+    summary:
+      "A daily puzzle from Dr. FunFacts: five things, put them in order from lightest to heaviest, 45 seconds and three tries with no pausing. Green locks a correct spot, yellow means one away, gray means two or more. Every number links to its source, and a new puzzle arrives at midnight.",
+    tags: ["Daily puzzle", "Number sense", "Dr. FunFacts"],
+    audience: "Curious learners",
+    format: "Daily puzzle",
   },
   {
     id: "cs-faculty-hub",
