@@ -7,7 +7,7 @@ const profile = {
   focus: "AI-built tools for educators, coaches, and curious learners",
   bio: "A collection of interactive tools built using AI for educators, coaches, researchers, and anyone who thinks learning should be smarter than a slide deck.",
   stats: [
-    { label: "Tools", value: "41" },
+    { label: "Tools", value: "42" },
     { label: "Focus", value: "Teaching" },
     { label: "Built with", value: "AI" },
   ],
@@ -102,6 +102,18 @@ const tools = [
     tags: ["Course audit", "AI policy", "Assessment"],
     audience: "Luddy faculty",
     format: "AI course audit",
+  },
+  {
+    id: "canvas-frameworks",
+    title: "Canvas Features and Fink's Significant Learning",
+    category: "Curriculum Design",
+    url: "https://akesha.github.io/CanvasFrameworks/",
+    image: "./assets/current/42.png",
+    summary:
+      "A matrix of 30 Canvas features mapped to Fink's six kinds of significant learning and Bloom's cognitive, affective, and psychomotor levels, with design checks and a course plan. Upload a syllabus or Canvas export and the AI course review checks it against the criteria you pick, quoting evidence and suggesting Canvas changes.",
+    tags: ["Canvas", "Fink", "Bloom's taxonomy", "Course review"],
+    audience: "Faculty and instructional designers",
+    format: "Interactive matrix + AI review",
   },
   {
     id: "intelligent-folder-tutorial",
